@@ -13,6 +13,11 @@ public class Venta {
     
     public boolean agregarAsiento(Asiento asiento){
         boolean result = false;
+        if(!asiento.isEstado()){
+           this.asiento = asiento;
+           asiento.reservar();
+           result = true;
+        }
         return result;
     }
     public boolean setEmpleado(Empleado empleado){
