@@ -5,12 +5,15 @@ public class Asiento {
     private int numero;
     private boolean estado;
     private float precio;
+    
+    
 
-    public Asiento(int numero, boolean estado, float precio) {
+    public Asiento(int numero, float precio) {
         this.numero = numero;
         this.precio = precio;
     }
     
+   
     public boolean reservar(){
         boolean result = false;
         return result;
